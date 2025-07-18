@@ -391,6 +391,11 @@ p.footer-p {
     p.footer-p {
         margin-top: 28px;
     }
+    
+    #love-line-color{
+        margin-left: 17px;
+        padding-left: 0px;
+    }
 }
 
 /* tablet device responsive */
