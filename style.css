@@ -181,7 +181,7 @@ p.love-card-p {
     padding: 10px 20px;
     max-width: 550px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 span.Year {
     font-size: 4.6rem;
@@ -194,12 +194,75 @@ span.Experience {
 
 button#love-btn {
     margin-left: -80px;
-    margin-top: -85px;
+    margin-top: -135px;
 }
 
 .card-img img{
     width: 100%;
 }
+/* Facts section */
+
+section.Facts {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1.Facts-h1 {
+    font-size: 2.81rem;
+    color: rgba(19, 19, 19, 1);
+    font-weight: 800;
+}
+
+p.facts-p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+    max-width: 565px;
+}
+
+
+.facts-icon-main {
+    width: 242px;
+    height: 242px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 144, 14, 1);
+    margin-top: 100px;
+}
+
+.facts-icon {
+    text-align: center;
+    max-width: 200px;
+    }
+
+p.facts-icon-p {
+    color: rgba(114, 114, 114, 1);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+h4.facts-icon-h4 {
+    font-size: 2.81rem;
+    font-weight: 800;
+    margin: 0 auto;
+    color: rgba(66, 66, 66, 1);
+    margin-top: 10px;
+}
+
+.facts-icon-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
 
 
 /* responsive mobile device */
@@ -208,9 +271,16 @@ button#love-btn {
     .nav-bar,
     .nav-link,
     .Features-container,
-    .love
+    .love,
+    .facts-icon-flex
     {
         flex-direction: column;
+        text-align: center;
+    }
+    .facts-icon-flex{
+        align-items: center;
+    }
+    .facts-container{
         text-align: center;
     }
 
@@ -232,15 +302,46 @@ button#love-btn {
     }
 }
 
-/* tablet responsive */
+/* tablet device responsive */
 
 @media screen and (min-width:576px) and (max-width:992px) {
+   
+   
+    nav.nav-bar.display-flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.Features-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
 
     header.bg-light{
         height: 61.88rem;
  
     }
     .love{
-        margin-top: 700px;
+        margin-top: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .facts-icon-flex {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        margin-left: 100px;
+    }
+
+    button#love-btn {
+    margin-left: 230px;
+    margin-top: -135px;
+}
+
+.facts-container {
+    margin-left: 100px;
+}
 }
